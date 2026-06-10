@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="todoapp.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="container">
+        <h1>Todo App</h1>
+
+        <div class="field">
+          <input
+            id="task"
+            name="task"
+            type="text"
+            placeholder="Добавить задачу"
+            pattern="[A-Za-zа-яА-Я0-9]+"
+          />
+          <button id="add">Добавить</button>
+        </div>
+
+        <ul class="todo-list"></ul>
+
+        <div class="field">
+          <button id="all">Все задачи</button>
+          <button id="active">Активные</button>
+          <button id="completed">Завершенные</button>
+        </div>
+
+        <p class="counter"></p>
+      </div>
+    </div>
+
+    <script src="todoapp.js"></script>
+  </body>
+</html>

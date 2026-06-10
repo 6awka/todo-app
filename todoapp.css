@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #252429;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(60deg, #12db4e, #12c7db);
+  padding: 30px;
+  border-radius: 15px;
+
+  animation: fadeIn 0.5s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  border: 1px solid #ddd;
+}
+
+p {
+  font-weight: bolder;
+  font-size: small;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #444347;
+}
+
+input:hover {
+  border-color: #bbb;
+}
+
+.field {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.field input {
+  flex: 1;
+  height: 42px;
+}
+
+.field button {
+  width: 130px;
+  height: 42px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-list input {
+  flex: 1;
+}
+
+li {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+button {
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #4a4852;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+  box-sizing: border-box;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
